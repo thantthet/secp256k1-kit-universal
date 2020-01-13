@@ -6,7 +6,7 @@ Secp256k1Kit is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Secp256k1Kit.swift'
+pod 'Secp256k1Kit-Universal.swift'
 ```
 
 ## License
