@@ -1,17 +1,17 @@
 Pod::Spec.new do |s|
-  s.name             = 'Secp256k1Kit.swift'
+  s.name             = 'Secp256k1Kit-Universal.swift'
   s.module_name      = 'Secp256k1Kit'
-  s.version          = '1.0'
-  s.summary          = 'Crypto secp256k1 library for Swift'
+  s.version          = '1.0.1'
+  s.summary          = 'Crypto secp256k1 library for Swift. Supports iOS & OSX'
 
   s.description      = <<-DESC
 CryptoSecp256k1 includes crypto functions for signing transactions Swift. It supports secp256k1.
                        DESC
 
-  s.homepage         = 'https://github.com/horizontalsystems/secp256k1-kit-ios'
+  s.homepage         = 'https://github.com/cuhte3/secp256k1-kit-universal'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Horizontal Systems' => 'hsdao@protonmail.ch' }
-  s.source           = { git: 'https://github.com/horizontalsystems/secp256k1-kit-ios.git', tag: "#{s.version}" }
+  s.authors          = { 'Horizontal Systems' => 'hsdao@protonmail.ch', 'cuhte3' => 'farid@getportal.co' }
+  s.source           = { git: 'https://github.com/cuhte3/secp256k1-kit-universal.git', tag: "#{s.version}" }
   s.social_media_url = 'http://horizontalsystems.io/'
 
   s.swift_version = '5'
