@@ -14,16 +14,24 @@ CryptoSecp256k1 includes crypto functions for signing transactions Swift. It sup
   s.source           = { git: 'https://github.com/horizontalsystems/secp256k1-kit-ios.git', tag: "#{s.version}" }
   s.social_media_url = 'http://horizontalsystems.io/'
 
-  s.ios.deployment_target = '11.0'
   s.swift_version = '5'
 
-  s.source_files = ['Secp256k1Kit/Classes/**/*', 'Secp256k1Kit/Libraries/include/*.h']
-
   s.preserve_paths = ['Secp256k1Kit/Libraries']
-  s.vendored_libraries  = 'Secp256k1Kit/Libraries/lib/libsecp256k1.a'
 
-  s.pod_target_xcconfig = {
-    'HEADER_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}/Secp256k1Kit/Libraries/include"',
-    'LIBRARY_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}/Secp256k1Kit/Libraries/lib"'
+  s.ios.deployment_target = '11.0'
+  s.ios.source_files = ['Secp256k1Kit/Classes/**/*', 'Secp256k1Kit/Libraries/ios/include/*.h']
+  s.ios.vendored_libraries  = 'Secp256k1Kit/Libraries/ios/lib/libsecp256k1.a'
+  s.ios.pod_target_xcconfig = {
+    'HEADER_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}/Secp256k1Kit/Libraries/ios/include"',
+    'LIBRARY_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}/Secp256k1Kit/Libraries/ios/lib"'
   }
+
+  s.osx.deployment_target = '10.14'
+  s.osx.source_files = ['Secp256k1Kit/Classes/**/*', 'Secp256k1Kit/Libraries/osx/include/*.h']
+  s.osx.vendored_libraries  = 'Secp256k1Kit/Libraries/osx/lib/libsecp256k1.a'
+  s.osx.pod_target_xcconfig = {
+    'HEADER_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}/Secp256k1Kit/Libraries/osx/include"',
+    'LIBRARY_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}/Secp256k1Kit/Libraries/osx/lib"'
+  }
+
 end
