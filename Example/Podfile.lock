@@ -1,16 +1,16 @@
 PODS:
-  - Secp256k1Kit.swift (1.0)
+  - Secp256k1Kit-Universal.swift (1.0.1)
 
 DEPENDENCIES:
-  - Secp256k1Kit.swift (from `../`)
+  - Secp256k1Kit-Universal.swift (from `../`)
 
 EXTERNAL SOURCES:
-  Secp256k1Kit.swift:
+  Secp256k1Kit-Universal.swift:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Secp256k1Kit.swift: 93b1bfbb8909c12605666cc3b1e59d1d1fde7322
+  Secp256k1Kit-Universal.swift: 670e2cfc7ffa19c98ebca5f700d14b4c94ade99b
 
-PODFILE CHECKSUM: 69814408346cba9adbca69134701b8d6633a2779
+PODFILE CHECKSUM: 3e1392e85954b2bc77d732b75013cc9442ad0731
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.1
