@@ -19,19 +19,9 @@ CryptoSecp256k1 includes crypto functions for signing transactions Swift. It sup
   s.preserve_paths = ['Secp256k1Kit/Libraries']
 
   s.ios.deployment_target = '11.0'
-  s.ios.source_files = ['Secp256k1Kit/Classes/**/*', 'Secp256k1Kit/Libraries/ios/include/*.h']
-  s.ios.vendored_libraries  = 'Secp256k1Kit/Libraries/ios/lib/libsecp256k1.a'
-  s.ios.pod_target_xcconfig = {
-    'HEADER_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}/Secp256k1Kit/Libraries/ios/include"',
-    'LIBRARY_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}/Secp256k1Kit/Libraries/ios/lib"'
-  }
-
   s.osx.deployment_target = '10.14'
-  s.osx.source_files = ['Secp256k1Kit/Classes/**/*', 'Secp256k1Kit/Libraries/osx/include/*.h']
-  s.osx.vendored_libraries  = 'Secp256k1Kit/Libraries/osx/lib/libsecp256k1.a'
-  s.osx.pod_target_xcconfig = {
-    'HEADER_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}/Secp256k1Kit/Libraries/osx/include"',
-    'LIBRARY_SEARCH_PATHS' => '"${PODS_TARGET_SRCROOT}/Secp256k1Kit/Libraries/osx/lib"'
-  }
+
+  s.source_files = ['Secp256k1Kit/Classes/**/*', 'Secp256k1Kit/Libraries/include/*.h']
+  s.vendored_frameworks = 'Secp256k1Kit/Libraries/sepc256k1.xcframework'
 
 end
