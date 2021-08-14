@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name             = 'Secp256k1Kit-Universal.swift'
   s.module_name      = 'Secp256k1Kit'
-  s.version          = '1.0.1'
-  s.summary          = 'Crypto secp256k1 library for Swift. Supports iOS & OSX'
+  s.version          = '1.1'
+  s.summary          = 'Crypto secp256k1 library for Swift. Supports iOS & macOS including m1 macs'
 
   s.description      = <<-DESC
 CryptoSecp256k1 includes crypto functions for signing transactions Swift. It supports secp256k1.
