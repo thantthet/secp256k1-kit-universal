@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'Secp256k1Kit-Universal.swift'
+  s.name             = 'Secp256k1Kit.swift'
   s.module_name      = 'Secp256k1Kit'
   s.version          = '1.1'
   s.summary          = 'Crypto secp256k1 library for Swift. Supports iOS & macOS including m1 macs'
